@@ -1,11 +1,11 @@
-## WhiteLabel Module
+## White Label Module
 
-Load any whitelabel styling on the fly, you can for example change the primary color whenever you want.
+Load any white label styling on the fly, you can for example change the primary color whenever you want.
 
 ## Features
 
 - Overwrite any sass variables whenever you want
-- Functionality to easily setup a custom brand style, allowing you to load a brand based on your own logic.
+- Functionality for easily setting up a custom brand style, allowing you to load a brand based on your own logic.
 - Easy to adjust to support any variables you want
 - Loads Atlas colors by default
 
@@ -23,7 +23,7 @@ Load any whitelabel styling on the fly, you can for example change the primary c
 
 ## Usage
 
-Once the installation has succesfully been setup you will have to choose when to load a brand that you have setup. You will have to create some logic yourself to fire the `ACT_Brand_SetVariables` nanoflow with a Brand object at the desired moment. An example: You have a multi-tenant application and one a user logs in you want that user to see the styling of the company that he is a part of. In this case it is wise to add a 1 - 1 association between the `Brand` and `Company` entity. Now once the user logs in you can add a dataview to the layout of the first page that the user will arrive at. This dataview will run a nanoflow which will retrieve the `Brand` from the currentuser's `Company` and then runs the `ACT_Brand_SetVariables` nanoflow. This will then load the desired styles for the user. 
+Once the installation has been successfully set up you will have to choose when to load a brand that you have setup. You will have to create some logic yourself to fire the `ACT_Brand_SetVariables` nanoflow with a Brand object at the desired moment. An example: You have a multi-tenant application and one a user logs in you want that user to see the styling of the company that he is a part of. In this case it is wise to add a 1 - 1 association between the `Brand` and `Company` entity. Now once the user logs in you can add a dataview to the layout of the first page that the user will arrive at. This dataview will run a nanoflow which will retrieve the `Brand` from the currentuser's `Company` and then runs the `ACT_Brand_SetVariables` nanoflow. This will then load the desired styles for the user. 
 
 ## Adding more variables
 
@@ -36,11 +36,13 @@ By default this module manages the standard `Brand` colors a few `Font` variable
 
 ## SASS compile errors
 
-It could be that after loading the module your application is giving you styling errors. Something like `Error: $color: var(--brand-primary) is not a color`. This is because we are not using css variables instead of sass variables and there are some sass functions that are not supported for css variables. The main 3 that function that Mendix uses that will give this error are the `lighten`, `darken` and `mix` functions. These can either be replaced with a `color-mix` function or with a new css variable that you will have to load inside the ACT_Brand_SetVariables nanoflow (you can see examples in the overwrite folder from installation step 3).
+You might encounter styling errors in your application after loading the module. Something like `Error: $color: var(--brand-primary) is not a color`. This is because we are not using css variables instead of sass variables and there are some sass functions that are not supported for css variables. The main 3 that function that Mendix uses that will give this error are the `lighten`, `darken` and `mix` functions. These can either be replaced with a `color-mix` function or with a new css variable that you will have to load inside the ACT_Brand_SetVariables nanoflow (you can see examples in the overwrite folder from installation step 3).
+
+You can read more about the difference between sass & css variables [here](https://stackoverflow.com/questions/67016460/difference-between-scss-variables-and-css-variables).
 
 There are also javascript actions available in the module which can output the correct color values based on the sass `lighten`, `darken` and `mix` functions if you want the perfectly matching color. See the `SUB_Brand_AtlasFixes` nanoflow for an example setup.
 
 ## Issues, Suggestions, and Feature Requests
 
 Please feel free to raise any issues, share suggestions, or request new features on the GitHub repository:
-[WhiteLabel Module GitHub Issues](https://github.com/hunter-koppen/WhiteLabelModule/issues)
+[White Label Module GitHub Issues](https://github.com/hunter-koppen/WhiteLabelModule/issues)
