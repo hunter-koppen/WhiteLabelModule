@@ -15,7 +15,7 @@ Load any whitelabel styling on the fly, you can for example change the primary c
 2. In the project settings in the theme tab make sure the module is loaded last
 3. Open the project folder and then copy the content from the overwrite folder (should be in themesource/whitelabel/web/overwrite) and paste it inside the root folder of your project, this will overwrite some atlas core files and the custom-variables.scss file. Do note that any changes you have done to these files will be lost.
 
-![copy-overwrite-folder](image.png)
+![copy-overwrite-folder](copy-overwrite-folder.png)
 
 ## Email headers
 
