@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.mendix.com/package/1.0/">
+  <modelerProject xmlns="http://www.mendix.com/modelerProject/1.0/">
+    <module name="WhiteLabel" />
+    <projectFile path="project.mpr" />
+    <files>
+      <file path="javascriptsource/whitelabel/actions/package-lock.json" />
+      <file path="javascriptsource/whitelabel/actions/package.json" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/.package-lock.json" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/deno_asserts@0.168.0.mjs" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/LICENSE" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/package.json" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/README.md" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/tinycolor.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/cjs/package.json" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/cjs/test.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/cjs/test_template.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/cjs/tinycolor.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/dist/tinycolor-min.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/esm/package.json" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/esm/test.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/esm/test_template.js" />
+      <file path="javascriptsource/whitelabel/actions/node_modules/tinycolor2/esm/tinycolor.js" />
+      <file path="javascriptsource/whitelabel/actions/JS_Color_Lighten.js" />
+      <file path="javascriptsource/whitelabel/actions/JS_Color_Darken.js" />
+      <file path="javascriptsource/whitelabel/actions/JS_SetCSSVariable.js" />
+      <file path="javascriptsource/whitelabel/actions/JS_Color_Mix.js" />
+      <file path="themesource/whitelabel/settings.json" />
+      <file path="themesource/whitelabel/native/design-properties.json" />
+      <file path="themesource/whitelabel/native/main.js" />
+      <file path="themesource/whitelabel/web/css-variables.scss" />
+      <file path="themesource/whitelabel/web/design-properties.json" />
+      <file path="themesource/whitelabel/web/main.scss" />
+      <file path="themesource/whitelabel/web/overwrite/theme/web/custom-variables.scss" />
+      <file path="themesource/whitelabel/web/overwrite/themesource/atlas_core/web/core/helpers/_slider-color-variant.scss" />
+      <file path="themesource/whitelabel/web/overwrite/themesource/atlas_core/web/core/widgets/_date-picker.scss" />
+      <file path="themesource/whitelabel/web/overwrite/themesource/atlas_core/web/core/widgets/_switch.scss" />
+      <file path="themesource/whitelabel/web/overwrite/themesource/atlas_core/web/core/widgets/_tab-container.scss" />
+      <file path="widgets/ColorPicker.mpk" />
+    </files>
+  </modelerProject>
+</package>

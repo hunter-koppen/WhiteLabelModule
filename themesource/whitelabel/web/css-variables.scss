@@ -1,0 +1,22 @@
+// This file contains all the CSS-variables. They are attached to the :root selector which is best practice for css variables.
+// The colors you choose here are the default colors if you dont overwrite it.
+:root {
+    --brand-primary: #264ae5;
+    --brand-success: #3cb33d;
+    --brand-warning: #eca51c;
+    --brand-danger: #e33f4e;
+    --brand-info: #0086d9;
+    --brand-inverse: #24276c;
+    --font-color-header: #0a1325;
+    --font-color-default: #0a1325;
+    --topbar-bg: #020557;
+    --sidebar-bg: #24276c;
+    --font-family-base: "Open Sans", sans-serif;
+}
+
+// below are css variables to fix Atlas
+:root {
+    --primary-lighten-30: color-mix(in srgb, $brand-primary, white 65%);
+    --primary-mix-black-80: color-mix(in srgb, $brand-primary, black 20%);
+    --font-color-default-lighten-45: color-mix(in srgb, $font-color-default, white 55%);
+}
