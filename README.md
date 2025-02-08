@@ -1,13 +1,14 @@
 ## White Label Module
 
-Load any white label styling on the fly, you can for example change the primary color whenever you want.
+Load any white label styling on the fly, you can for example change the primary color whenever you want. when using the module to its full power you can easily generate a custom style simply based on a logo image and immediately load it.
 
 ## Features
 
 - Overwrite any sass variables whenever you want
 - Functionality for easily setting up a custom brand style, allowing you to load a brand based on your own logic.
 - Easy to adjust to support any variables you want
-- Loads Atlas colors by default
+- Get the primary color from an image
+- Get subcolors from a primary color
 
 ## Installation
 
@@ -23,7 +24,15 @@ Load any white label styling on the fly, you can for example change the primary 
 
 ## Usage
 
-Once the installation has been successfully set up you will have to choose when to load a brand that you have setup. You will have to create some logic yourself to fire the `ACT_Brand_SetVariables` nanoflow with a Brand object at the desired moment. An example: You have a multi-tenant application and one a user logs in you want that user to see the styling of the company that he is a part of. In this case it is wise to add a 1 - 1 association between the `Brand` and `Company` entity. Now once the user logs in you can add a dataview to the layout of the first page that the user will arrive at. This dataview will run a nanoflow which will retrieve the `Brand` from the currentuser's `Company` and then runs the `ACT_Brand_SetVariables` nanoflow. This will then load the desired styles for the user. 
+Once the installation has been successfully set up you will have to choose when to load a brand that you have setup. You will have to create some logic yourself to fire the `ACT_Brand_SetVariables` nanoflow with a Brand object at the desired moment. An example: You have a multi-tenant application and one a user logs in you want that user to see the styling of the company that he is a part of. In this case it is wise to add a 1 - 1 association between the `Brand` and `Company` entity. Now once the user logs in you can add a dataview to the layout of the first page that the user will arrive at. This dataview will run a nanoflow which will retrieve the `Brand` from the currentuser's `Company` and then runs the `ACT_Brand_SetVariables` nanoflow. This will then load the desired styles for the user.
+
+## Getting a brand color based on a logo image
+
+I have added a java action `JA_ExtractPrimaryColor` which can be used to extract the primary color from an image. This action uses the 'color-thief' api to extract the colors from an image.
+
+## Getting subcolors from a primary color
+
+I have also added a microflow called `ACT_Tints_Get` which can be used to get a list of subcolors from a primary color. This can be used to get the primary color and then use that to generate a list of subcolors which can be used to generate a color palette (for example primary-400, primary-300 etc.).
 
 ## Adding more variables
 

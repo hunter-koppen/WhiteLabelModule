@@ -1,7 +1,11 @@
 // This file contains all the CSS-variables. They are attached to the :root selector which is best practice for css variables.
 // The colors you choose here are the default colors if you dont overwrite it.
 :root {
-    --brand-primary: #264ae5;
+    --brand-primary-500: #264ae5;
+    --brand-primary-400: #3B59EC;
+    --brand-primary-300: #6A80F1;
+    --brand-primary-200: #9DACF6;
+    --brand-primary-100: #CCD4FA;
     --brand-success: #3cb33d;
     --brand-warning: #eca51c;
     --brand-danger: #e33f4e;
